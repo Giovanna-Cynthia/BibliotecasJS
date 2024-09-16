@@ -1,0 +1,65 @@
+/* Estilo geral do formulário */
+.containerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.h2Form{
+    text-decoration: 1px solid underline;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limite máximo da largura */
+    background-color: rgba(127, 174, 236, 0.457);
+}
+
+.form-control {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-size: 16px; /* Reduzi o tamanho da fonte */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(0, 106, 255);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px; /* Reduzi o padding */
+    font-size: 14px; /* Reduzi o tamanho da fonte */
+    border: 1px solid #929292;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #8bbdf3;
+}
