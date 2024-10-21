@@ -25,6 +25,13 @@ export default function Home() {
         onPress={() => navigation.navigate('Contato')}
         />
 
+        <Card
+        title="Fac"
+        content="Clique abaixo para fazer uma pergunta"
+        buttonText="Perguntas Frequentes"
+        onPress={() => navigation.navigate('Fac')}
+        />
+
          {/* <Button title="Ir para Contato"
         onPress={() => navigation.navigate('Contato')}
         /> */}
