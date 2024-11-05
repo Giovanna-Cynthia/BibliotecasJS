@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Alert, Button, StyleSheet, Text, TextInput, View } from 'react-native'
+import { Alert, Button, Image, StyleSheet, Text, TextInput, View } from 'react-native'
 import axios from 'axios';
 
 export default function Contato() {
@@ -46,7 +46,13 @@ export default function Contato() {
 
         <Button title="Enviar contato" onPress={enviarContato}/>
 
+        <Image
+  source={require('src/img/petfofo.png')}
+  style={{ width: 100, height: 100 }}
+/>
     </View>
+
+    
   )
 }
 

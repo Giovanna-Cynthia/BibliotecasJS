@@ -8,7 +8,9 @@
     {
       "id": "2",
       "nome": "Amanda Lara",
-      "telefone": "64368764"
+      "telefone": "64368764",
+      "img": "src/img/petfofo.png"
+
     }
   ],
   "fac": [
@@ -28,4 +30,5 @@
       "resposta": "JSON Server é ótimo para desenvolvimento..."
     }
   ]
+
 }

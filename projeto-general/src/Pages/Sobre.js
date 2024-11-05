@@ -32,6 +32,19 @@ export default function Sobre() {
     })
   }
 
+  const editarContato = (id) => {
+    axios 
+    .put(`http://10.0.2.2.3000/atualizar/${id}`)
+    .then(() => {
+      setContatos(contatos.filter((contato) => contato.id !== id));
+      Alert.alert("Sucesso, contato editado com sucesso");
+    })
+    .catch((error) => {
+      console.error("Erro ao editar contato", error);
+      Alert.alert("Erro, não foi possivel editar");
+    })
+  }
+
   // Use o useEffect para buscar dados
   useEffect(() => {
     listContatos();
@@ -49,7 +62,7 @@ export default function Sobre() {
               <Button
               title="Excluir"
               color="red"
-              onPress={() => deleteContato(contato.id)}
+              onPress={() => deleteContato(contato.id)} 
               />
             </View>
           ))
@@ -58,6 +71,7 @@ export default function Sobre() {
         )}
     </View>
     </ScrollView>
+
   )
 }
 
